@@ -1,0 +1,365 @@
+$main-width: 1000px;
+@font-family-base: SFUIDisplay-Regular, system, -apple-system, HelveticaNeue, LucidaGrande;
+
+.font-medium {
+	font-family: "SFUIDisplay-Medium";
+}
+
+.font-regular {
+	font-family: "SFUIDisplay-Regular";
+}
+
+.font-light {
+	font-family: "SFUIDisplay-Light";
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	/* Отступ снизу, по высоте футера */
+	margin-bottom: 100px !important;
+}
+
+footer {
+	width: 100%;
+	min-height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	background-color: #FBFBFB;
+	position: absolute;
+	bottom: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: $main-width;
+}
+
+.navbar-default {
+	z-index: 10000;
+	background-color: #FBFBFB;
+	border-color: #FBFBFB;
+	border-radius: 0;
+	height: 70px;
+}
+
+.navbar-default img {
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 102px;
+  height: 47px;
+}
+
+.navbar-toggle {
+	margin-top: 17px;
+}
+
+#menu-elements {
+	background-color: #FBFBFB;
+	margin-top: 10px;
+}
+
+
+	#menu-elements a {
+		color: #000;
+		line-height: 25px;
+		font-size: 15px;
+	}
+
+	#menu-elements a:hover {
+		color: rgba(0, 203, 53, 0.4);
+	}
+
+	#menu-elements .active {
+		color: #01CA35;
+	}
+
+/*Blog posts*/
+
+.post {
+	height: 215px;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+.post p {
+  margin-top: 10px;
+  line-height: 20px;
+  text-indent: 20px;
+}
+
+.post blockquote {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.post-info {
+	height: 17px;
+	line-height: 17px;
+}
+
+
+.post-info a {
+  color: #000000;
+}
+
+.post-icon {
+	margin: 0 0px 0 20px;
+	padding: 0;
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+}
+
+.title {
+	color: #000000;
+	font-size: 17px;
+}
+
+.comments-count {
+	float: left;
+}
+
+.post-tags {
+	float: left;
+}
+
+.post-date {
+	float: left;
+}
+
+.news-panel {
+	margin-top: 15px;
+}
+
+.news-title {
+	height: 35px;
+	font-size: 14px;
+	background-color: #FBFBFB;
+	line-height: 35px;
+}
+
+.news-content {
+	padding: 8px;
+}
+
+.news-content a {
+  color: #000000;
+}
+
+.news-content .activeTag {
+  color: #01CA35;
+}
+
+@media (max-width: $screen-xs-max) {
+	.news-panel {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.news-panel {
+		margin-top: 10px;
+	}
+}
+
+.icon {
+	width: 25px;
+	height: 25px;
+	margin-top: 17px;
+	margin-left: 10px;
+}
+
+.copyright {
+	color: #9B9B9B;
+	font-size: 12px;
+	height: 60px;
+	padding-top: 21px;
+}
+
+.pages {
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.pages a {
+  color: #000000;
+}
+.pages .active {
+  color: #01CA35;
+}
+
+/*About me*/
+
+#about-container {
+	max-width: 770px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+	margin: 20px auto;
+}
+
+#avatar {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #979797;
+	background-color: #D8D8D8;
+	overflow: hidden;
+	text-align:center;
+}
+
+#avatar img {
+  width: 77%;
+  margin-top: 10px;
+}
+
+@media (max-width: $screen-sm-max) {
+	#avatar {
+		margin: 0 auto;
+	}
+
+	#hello {
+		margin-top: 10px;
+	}
+}
+
+.about-block {
+	margin-left: 20px;
+	display: block;
+}
+
+.about-title {
+	font-size: 16pt;
+}
+
+.project-block {
+	display: block;
+	margin-top: 30px;
+	margin-left: 25px;
+}
+
+.project {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.project-img {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #EAEAEA;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-name {
+	position: absolute;
+	font-size: 13pt;
+	top: 2px;
+	left: 60px;
+}
+
+.project-desc {
+	position: absolute;
+	top: 25px;
+	left: 60px;
+}
+
+.publication-block {
+	@extend .project-block;
+}
+
+.publication-list {
+	@extend .font-light;
+	margin-top: 10px;
+	padding-left: 17px;
+}
+
+.publication-list li {
+  margin-bottom: 10px;
+}
+
+.dl-horizontal {
+}
+
+.dl-horizontal dt {
+  @extend .font-regular;
+  font-style: normal;
+}
+
+.dl-horizontal dd {
+  @extend .font-light;
+}
+
+#hypercomments_widget, #disqus_thread {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/*Support*/
+.message-block {
+	width: 100%;
+	max-width: 550px;
+	margin: 150px auto;
+}
+.image-gif {
+	width: 80px;
+}
+
+/*Devise*/
+
+.devise-block {
+	width: 320px;
+	margin: 50px auto;
+	padding: 30px;
+	background-color: #FBFBFB;
+}
+
+#error_explanation {
+  color: #f00;
+}
+
+#error_explanation ul {
+  list-style: none;
+  margin: 0 0 18px 0;
+}
+
+#error_explanation h2 {
+  font-size: 16px;
+}
+
+.field_with_errors {
+  @extend .has-error;
+}
+
+/*Will paginate*/
+.pagination {
+	@extend .pages;
+	@extend .font-regular;
+}
+
+.pagination .previous_page {
+  display: none;
+}
+
+.pagination .next_page {
+  display: none;
+}
+
+.pagination .current {
+  @extend .active;
+  font-style: normal;
+}
