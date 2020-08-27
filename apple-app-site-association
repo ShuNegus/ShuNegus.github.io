@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "8AAQ39RR93.com.65apps.profee",
-                "paths": [ "*" ]
+                "paths": [ "/*" ]
             }
         ]
     },
